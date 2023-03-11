@@ -83,3 +83,29 @@ main {
         opacity: 1;
     }
   }
+
+  @media (min-width: 320px) {
+    body {
+        font-size: 0.8em;
+    }
+    
+    main {
+        width: 90%;
+    }
+
+    label {
+        row-gap: 1em;
+        padding: 1em;
+    }
+
+    @keyframes appearing {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+        100% {
+            width: 100%;
+            opacity: 1;
+        }
+      }
+  }
