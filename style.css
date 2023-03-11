@@ -17,17 +17,17 @@ main {
     width: 80%;
     margin: 0 auto;
     padding: 2rem 0;
-  }
+}
 
-  input {
+input {
     display: none;
-  }
+}
 
-  input:checked + label span .close-icon {
+input:checked + label span .close-icon {
     transform: rotate(45deg);
-  }
+}
   
-  label {
+label {
     cursor: pointer;
     display: grid;
     grid-template-columns: 80% 20%;
@@ -40,40 +40,40 @@ main {
     border-radius: 1em;
     font-weight: 500;
     color: #a1deff;
-  }
+}
 
-  input:checked + label {
+input:checked + label {
     background-image: linear-gradient(30deg, #0097e6 40%, #4fbcf7);
-  }
+}
 
-  label span {
+label span {
     text-align: right;
-  }
+}
 
-  label span .close-icon {
+label span .close-icon {
     width: 2em;
     transform-origin: center center;
     transition: all ease 0.3s;
-  }
+}
 
-  .image {
+.image {
     display: none;
     transition: all ease-in-out 2s;
-  }
+}
 
-  input:checked + label .image {
+input:checked + label .image {
     display: block;
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 3;
-  }
+}
 
-  .image img {
+.image img {
     border-radius: 0.5em;
     animation: appearing 0.7s ease-in-out forwards;
-  }
+}
 
-  @keyframes appearing {
+@keyframes appearing {
     0% {
         width: 0;
         opacity: 0;
@@ -82,9 +82,9 @@ main {
         width: 100%;
         opacity: 1;
     }
-  }
+}
 
-  @media (min-width: 320px) {
+@media (min-width: 320px) {
     body {
         font-size: 0.8em;
     }
@@ -108,9 +108,9 @@ main {
             opacity: 1;
         }
       }
-  }
+}
 
-  @media (min-width: 820px) {
+@media (min-width: 820px) {
     body {
         font-size: 1.2em;
     }
@@ -135,9 +135,9 @@ main {
             opacity: 1;
         }
       }
-  }
+}
 
-  @media (min-width: 1920px) {
+@media (min-width: 1920px) {
     body {
         font-size: 1.5em;
     }
@@ -185,4 +185,4 @@ main {
             opacity: 1;
         }
       }
-  }
+}
