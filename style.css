@@ -136,3 +136,53 @@ main {
         }
       }
   }
+
+  @media (min-width: 1920px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 40%;
+    }
+
+    main:hover .close-icon {
+        opacity: 1;
+    }
+
+    label {
+        padding: 1rem 1.5rem;
+        font-weight: 800;
+    }
+
+    label:hover {
+        background-image: linear-gradient(30deg, #0097e6 40%, #4fbcf7);
+    }
+
+    label span .close-icon {
+        opacity: 0;
+    }
+
+    label:hover .close-icon {
+        opacity: 1;
+        transform: rotate(45deg);
+    }
+
+    label:hover .image {
+        display: block;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    @keyframes appearing {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+        100% {
+            width: 70%;
+            opacity: 1;
+        }
+      }
+  }
