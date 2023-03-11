@@ -109,3 +109,30 @@ main {
         }
       }
   }
+
+  @media (min-width: 820px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    label {
+        row-gap: 1.5em;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    @keyframes appearing {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+        100% {
+            width: 90%;
+            opacity: 1;
+        }
+      }
+  }
